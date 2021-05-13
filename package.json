@@ -6,6 +6,8 @@
 	"scripts": {
 		"prepublishOnly": "safe-publish-latest",
 		"prepublish": "not-in-publish || npm run prepublishOnly",
+		"lint": "eslint --ext=.js,.mjs .",
+		"pretest": "npm run lint",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -28,6 +30,8 @@
 	},
 	"homepage": "https://github.com/inspect-js/has-dynamic-import#readme",
 	"devDependencies": {
+		"@ljharb/eslint-config": "^17.6.0",
+		"eslint": "^7.26.0",
 		"safe-publish-latest": "^1.1.4"
 	}
 }
