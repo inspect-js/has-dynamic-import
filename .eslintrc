@@ -2,4 +2,9 @@
 	"root": true,
 
 	"extends": "@ljharb",
+
+	"env": {
+		"node": true,
+		"browser": true,
+	},
 }

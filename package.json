@@ -8,7 +8,9 @@
 		"prepublish": "not-in-publish || npm run prepublishOnly",
 		"lint": "eslint --ext=.js,.mjs .",
 		"pretest": "npm run lint",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"tests-only": "nyc tape 'test/**/*.js'",
+		"test": "npm run tests-only",
+		"posttest": "aud --production"
 	},
 	"repository": {
 		"type": "git",
@@ -31,7 +33,14 @@
 	"homepage": "https://github.com/inspect-js/has-dynamic-import#readme",
 	"devDependencies": {
 		"@ljharb/eslint-config": "^17.6.0",
+		"aud": "^1.1.5",
 		"eslint": "^7.26.0",
-		"safe-publish-latest": "^1.1.4"
+		"nyc": "^10.3.2",
+		"safe-publish-latest": "^1.1.4",
+		"semver": "^6.3.0",
+		"tape": "^5.2.2"
+	},
+	"directories": {
+		"test": "test"
 	}
 }
