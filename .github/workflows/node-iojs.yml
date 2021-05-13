@@ -51,8 +51,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           skip-ls-check: true
+      - run: ./node_modules/.bin/tape 'test/**/*.js'
+        if: ${{ matrix.node-version == 'iojs-v3.2' || matrix.node-version == 'iojs-v3.1' || matrix.node-version == 'iojs-v3.0'}}
       - run: npm run tests-only
+        if: ${{ matrix.node-version != 'iojs-v3.2' && matrix.node-version != 'iojs-v3.1' && matrix.node-version != 'iojs-v3.0'}}
       - uses: codecov/codecov-action@v1
+        if: ${{ matrix.node-version != 'iojs-v3.2' && matrix.node-version != 'iojs-v3.1' && matrix.node-version != 'iojs-v3.0'}}
 
   node:
     name: 'io.js'
