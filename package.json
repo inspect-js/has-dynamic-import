@@ -1,0 +1,28 @@
+{
+	"name": "has-dynamic-import",
+	"version": "0.0.0",
+	"description": "Does the current environment have `import()` support?",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/inspect-js/has-dynamic-import.git"
+	},
+	"keywords": [
+		"import",
+		"dynamic",
+		"modules",
+		"esm",
+		"javascript",
+		"ecmascript",
+		"esmodules"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/inspect-js/has-dynamic-import/issues"
+	},
+	"homepage": "https://github.com/inspect-js/has-dynamic-import#readme"
+}
