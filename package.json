@@ -4,6 +4,8 @@
 	"description": "Does the current environment have `import()` support?",
 	"main": "index.js",
 	"scripts": {
+		"prepublishOnly": "safe-publish-latest",
+		"prepublish": "not-in-publish || npm run prepublishOnly",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -24,5 +26,8 @@
 	"bugs": {
 		"url": "https://github.com/inspect-js/has-dynamic-import/issues"
 	},
-	"homepage": "https://github.com/inspect-js/has-dynamic-import#readme"
+	"homepage": "https://github.com/inspect-js/has-dynamic-import#readme",
+	"devDependencies": {
+		"safe-publish-latest": "^1.1.4"
+	}
 }
