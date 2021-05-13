@@ -7,4 +7,13 @@
 		"node": true,
 		"browser": true,
 	},
+
+	"overrides": [
+		{
+			"files": "./import.js",
+			"parserOptions": {
+				"ecmaVersion": 2020,
+			},
+		},
+	],
 }
