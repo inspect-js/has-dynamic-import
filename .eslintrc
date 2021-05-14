@@ -8,6 +8,10 @@
 		"browser": true,
 	},
 
+	"globals": {
+		"Promise": true,
+	},
+
 	"overrides": [
 		{
 			"files": "./import.js",

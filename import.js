@@ -1,8 +1,7 @@
 'use strict';
 
-const fs = require('fs');
-
-module.exports = import('fs').then(
-	(x) => Object.entries(fs).every(([k, v]) => x[k] === v),
-	() => {}
-);
+module.exports = function () {
+	const promise = import('data:text/javascript,');
+	promise.catch(() => {});
+	return promise;
+};
