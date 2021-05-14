@@ -3,7 +3,10 @@
 	"version": "1.0.1",
 	"description": "Does the current environment have `import()` support?",
 	"main": "index.js",
-	"browser": "./browser.js",
+	"browser": {
+		"./": "./browser.js",
+		"./syntax": "./browser-syntax.js"
+	},
 	"exports": {
 		".": [
 			{
@@ -11,6 +14,13 @@
 				"default": "./index.js"
 			},
 			"./index.js"
+		],
+		"./syntax": [
+			{
+				"browser": "./browser-syntax.js",
+				"default": "./syntax.js"
+			},
+			"./syntax.js"
 		],
 		"./package.json": "./package.json"
 	},
@@ -67,5 +77,11 @@
 		"commitLimit": false,
 		"backfillLimit": false,
 		"hideCredit": true
+	},
+	"dependencies": {
+		"call-bind": "^1.0.2"
+	},
+	"testling": {
+		"files": "test/index.js"
 	}
 }
