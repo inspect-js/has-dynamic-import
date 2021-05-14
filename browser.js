@@ -2,8 +2,8 @@
 
 var supported = false;
 try {
-	Function('import("").catch(() => {})');
+	Function('import("").catch(() => {})'); // eslint-disable-line no-new-func
 	supported = true;
-} catch (e) { /**/ }a
+} catch (e) { /**/ }
 
 module.exports = supported;
