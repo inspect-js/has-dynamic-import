@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.0](https://github.com/inspect-js/has-dynamic-import/compare/v1.1.0...v2.0.0) - 2021-05-30
+
+### Commits
+
+- [Breaking] main entry point exports an `async function` and checks functionality; "syntax" entry point exports previous predicate [`dedeaac`](https://github.com/inspect-js/has-dynamic-import/commit/dedeaac1362eff8cf82485f22ed4e26ca79e8adf)
+
 ## [v1.1.0](https://github.com/inspect-js/has-dynamic-import/compare/v1.0.1...v1.1.0) - 2021-05-30
 
 ### Commits
