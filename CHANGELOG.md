@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.0](https://github.com/inspect-js/has-dynamic-import/compare/v1.0.1...v1.1.0) - 2021-05-30
+
+### Commits
+
+- [New] add `syntax` entry point that matches current main entry point [`6a1ac52`](https://github.com/inspect-js/has-dynamic-import/commit/6a1ac5209ced527eea97e529b9b9de7752fa62b8)
+- [Dev Deps] update `eslint`, `auto-changelog` [`c8c737f`](https://github.com/inspect-js/has-dynamic-import/commit/c8c737fc058eb96499e282bd4ed372490a2dcff9)
+
 ## [v1.0.1](https://github.com/inspect-js/has-dynamic-import/compare/v1.0.0...v1.0.1) - 2021-05-13
 
 ### Commits
