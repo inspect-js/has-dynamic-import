@@ -8,10 +8,6 @@
 		"browser": true,
 	},
 
-	"globals": {
-		"Promise": true,
-	},
-
 	"rules": {
 		"new-cap": ["error", {
 			"capIsNewExceptions": ["GetIntrinsic"],
@@ -21,15 +17,10 @@
 	"overrides": [
 		{
 			"files": "./import.js",
-			"parserOptions": {
-				"ecmaVersion": 2020,
-			},
-			"rules": {
-				"dot-notation": [2, { "allowKeywords": true }],
-			},
+			"extends": "@ljharb/eslint-config/node/14",
 		},
 		{
-			"files": "test/**/*.js",
+			"files": "test/**/*",
 			"rules": {
 				"id-length": 0,
 			},
