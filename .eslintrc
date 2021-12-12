@@ -12,6 +12,12 @@
 		"Promise": true,
 	},
 
+	"rules": {
+		"new-cap": ["error", {
+			"capIsNewExceptions": ["GetIntrinsic"],
+		}],
+	},
+
 	"overrides": [
 		{
 			"files": "./import.js",

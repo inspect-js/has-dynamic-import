@@ -1,9 +1,13 @@
 'use strict';
 
 var callBound = require('call-bind/callBound');
+var callBind = require('call-bind');
+var GetIntrinsic = require('get-intrinsic');
 var $then = callBound('Promise.prototype.then', true);
+var $Promise = GetIntrinsic('%Promise%', true);
+var $PromiseResolve = GetIntrinsic('%Promise.resolve%', true);
+var $resolve = $Promise && $PromiseResolve && callBind($PromiseResolve, $Promise);
 
-var pFalse = $then && Promise.resolve(false);
 var thunkFalse = function () {
 	return false;
 };
@@ -13,11 +17,18 @@ var thunkTrue = function () {
 
 module.exports = function hasDynamicImport() {
 	if (!$then) {
-		return {
-			then: function (resolve) {
-				resolve(false);
+		var p = {
+			then: function (resolve) { // eslint-disable-line consistent-return
+				if (typeof resolve === 'function') {
+					process.nextTick(function () {
+						resolve(false);
+					});
+				} else {
+					return hasDynamicImport();
+				}
 			}
 		};
+		return p;
 	}
 
 	try {
@@ -25,6 +36,6 @@ module.exports = function hasDynamicImport() {
 
 		return $then(importWrapper(), thunkTrue, thunkFalse);
 	} catch (e) {
-		return pFalse;
+		return $resolve(false);
 	}
 };

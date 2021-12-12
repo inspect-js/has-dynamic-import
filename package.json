@@ -79,7 +79,8 @@
 		"hideCredit": true
 	},
 	"dependencies": {
-		"call-bind": "^1.0.2"
+		"call-bind": "^1.0.2",
+		"get-intrinsic": "^1.1.1"
 	},
 	"testling": {
 		"files": "test/index.js"
