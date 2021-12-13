@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.1](https://github.com/inspect-js/has-dynamic-import/compare/v2.0.0...v2.0.1) - 2021-12-12
+
+### Commits
+
+- [actions] reuse common workflows [`308d8fb`](https://github.com/inspect-js/has-dynamic-import/commit/308d8fb4bc8e1330111da4df22be2c80b6e5f9f8)
+- [Fix] ensure the fake promise resolves on nextTick [`dea0dbc`](https://github.com/inspect-js/has-dynamic-import/commit/dea0dbca11217c8d0b0ecbbee26b7e5ae649cef6)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `safe-publish-latest`, `tape` [`5e9431c`](https://github.com/inspect-js/has-dynamic-import/commit/5e9431cea8952bb65905beb1ec23c9f259c36247)
+- [actions] update codecov uploader [`0b8d3f8`](https://github.com/inspect-js/has-dynamic-import/commit/0b8d3f87e7613976d353768fb45fad5a5ac3d7df)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `safe-publish-latest`, `tape` [`8fcdc05`](https://github.com/inspect-js/has-dynamic-import/commit/8fcdc055e32226fa8f76aea0ea0d13dff06e727b)
+
 ## [v2.0.0](https://github.com/inspect-js/has-dynamic-import/compare/v1.1.0...v2.0.0) - 2021-05-30
 
 ### Commits
