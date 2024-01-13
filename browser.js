@@ -14,6 +14,7 @@ var thunkTrue = function () {
 module.exports = function hasFunctionality() {
 	if (!$then) {
 		return {
+			__proto__: null,
 			then: function (resolve) {
 				resolve(false);
 			}

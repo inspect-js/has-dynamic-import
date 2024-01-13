@@ -18,6 +18,7 @@ var thunkTrue = function () {
 module.exports = function hasDynamicImport() {
 	if (!$then) {
 		var p = {
+			__proto__: null,
 			then: function (resolve) { // eslint-disable-line consistent-return
 				if (typeof resolve === 'function') {
 					process.nextTick(function () {
