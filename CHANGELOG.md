@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.1.0](https://github.com/inspect-js/has-dynamic-import/compare/v2.0.1...v2.1.0) - 2024-01-12
+
+### Commits
+
+- [meta] use `npmignore` to autogenerate an npmignore file [`16fda28`](https://github.com/inspect-js/has-dynamic-import/commit/16fda2832e3ea59b72145a464740d93c6f9e4341)
+- [New] add inline jsdoc types, for TS [`4d07733`](https://github.com/inspect-js/has-dynamic-import/commit/4d077337e2a5d6897f93363794916a29a440e017)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `tape` [`63fe5e3`](https://github.com/inspect-js/has-dynamic-import/commit/63fe5e33ddcc22783e226ca35fa792dfe373dd36)
+- [actions] update rebase action to use reusable workflow [`5bc0894`](https://github.com/inspect-js/has-dynamic-import/commit/5bc0894224a711c4c7e6b68771d95984ccba513f)
+- [Dev Deps] update `@ljharb/eslint-config`, `aud`, `npmignore`, `semver`, `tape` [`201283d`](https://github.com/inspect-js/has-dynamic-import/commit/201283de6b6314fa39254d241d4e3e975702ad39)
+- [Deps] update `call-bind`, `get-intrinsic` [`4a5bed0`](https://github.com/inspect-js/has-dynamic-import/commit/4a5bed0c8a7c50ab7a0e9dab36f43f4b462dbe55)
+- [meta] add missing `engines.node` [`b544707`](https://github.com/inspect-js/has-dynamic-import/commit/b544707aa19b50cd648df0b8721574c19bce0566)
+- [Robustness] make promiselikes into null objects [`ffded66`](https://github.com/inspect-js/has-dynamic-import/commit/ffded665cfc52b0a10798a492b616cf2fd705507)
+- [Deps] update `get-intrinsic` [`dc65726`](https://github.com/inspect-js/has-dynamic-import/commit/dc65726bd08f31de40220c680256464dd253eba9)
+- [meta] add `sideEffects` flag [`512e0fd`](https://github.com/inspect-js/has-dynamic-import/commit/512e0fdd84b6c2846fe843597402f61793953b4d)
+
 ## [v2.0.1](https://github.com/inspect-js/has-dynamic-import/compare/v2.0.0...v2.0.1) - 2021-12-12
 
 ### Commits
