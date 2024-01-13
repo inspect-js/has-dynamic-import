@@ -6,19 +6,24 @@ var GetIntrinsic = require('get-intrinsic');
 var $then = callBound('Promise.prototype.then', true);
 var $Promise = GetIntrinsic('%Promise%', true);
 var $PromiseResolve = GetIntrinsic('%Promise.resolve%', true);
-var $resolve = $Promise && $PromiseResolve && callBind($PromiseResolve, $Promise);
+var $resolve = $Promise && $PromiseResolve && $then && callBind($PromiseResolve, $Promise);
 
+/** @type {() => false} */
 var thunkFalse = function () {
 	return false;
 };
+/** @type {() => true} */
 var thunkTrue = function () {
 	return true;
 };
 
+/** @type {() => PromiseLike<boolean>} */
 module.exports = function hasDynamicImport() {
 	if (!$then) {
-		var p = {
+		/** @type {PromiseLike<boolean>} */
+		return {
 			__proto__: null,
+			// @ts-expect-error ts(2322) TODO: fixme
 			then: function (resolve) { // eslint-disable-line consistent-return
 				if (typeof resolve === 'function') {
 					process.nextTick(function () {
@@ -29,7 +34,6 @@ module.exports = function hasDynamicImport() {
 				}
 			}
 		};
-		return p;
 	}
 
 	try {

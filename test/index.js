@@ -4,8 +4,7 @@ var test = require('tape');
 var semver = require('semver');
 var isBrowser = typeof window !== 'undefined';
 var isNode = !isBrowser && typeof process !== 'undefined';
-// eslint-disable-next-line global-require
-var spawnSync = isNode && require('child_process').spawnSync;
+var spawnSync = isNode && require('child_process').spawnSync; // eslint-disable-line global-require
 
 var hasFullSupport = require('../');
 var hasSyntax = require('../syntax');
@@ -32,8 +31,9 @@ test('hasFullSupport', function (t) {
 		});
 	});
 
-	t.test('experimental warning', { skip: !spawnSync || process.env.RECURSION }, function (st) {
+	t.test('experimental warning', { skip: !spawnSync || !!process.env.RECURSION }, function (st) {
 		st.plan(1);
+		// @ts-expect-error ts(2349) TS can't narrow based on tape's `skip`
 		var res = spawnSync('node', ['test'], {
 			env: { PATH: process.env.PATH, RECURSION: 'recursion' }
 		});
