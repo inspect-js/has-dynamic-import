@@ -66,8 +66,8 @@
 	"devDependencies": {
 		"@ljharb/eslint-config": "^21.1.0",
 		"@types/call-bind": "^1.0.5",
-		"@types/node": "^20.11.0",
-		"@types/semver": "^7.5.6",
+		"@types/node": "^20.11.25",
+		"@types/semver": "^7.5.8",
 		"@types/tape": "^5.6.4",
 		"aud": "^2.0.4",
 		"auto-changelog": "^2.4.0",
@@ -77,8 +77,8 @@
 		"nyc": "^10.3.2",
 		"safe-publish-latest": "^2.0.0",
 		"semver": "^6.3.1",
-		"tape": "^5.7.2",
-		"typescript": "^5.4.0-dev.20240112"
+		"tape": "^5.7.5",
+		"typescript": "next"
 	},
 	"directories": {
 		"test": "test"
