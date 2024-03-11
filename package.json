@@ -92,8 +92,8 @@
 		"hideCredit": true
 	},
 	"dependencies": {
-		"call-bind": "^1.0.5",
-		"get-intrinsic": "^1.2.2"
+		"call-bind": "^1.0.7",
+		"get-intrinsic": "^1.2.4"
 	},
 	"testling": {
 		"files": "test/index.js"
