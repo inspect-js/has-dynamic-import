@@ -1,6 +1,6 @@
 'use strict';
 
-var callBound = require('call-bind/callBound');
+var callBound = require('call-bound');
 var callBind = require('call-bind');
 var GetIntrinsic = require('get-intrinsic');
 var $then = callBound('Promise.prototype.then', true);
@@ -41,6 +41,7 @@ module.exports = function hasDynamicImport() {
 
 		return $then(importWrapper(), thunkTrue, thunkFalse);
 	} catch (e) {
-		return $resolve(false);
+		// eslint-disable-next-line no-extra-parens
+		return /** @type {Promise<false>} */ (/** @type {NonNullable<typeof $resolve>} */ ($resolve)(false));
 	}
 };

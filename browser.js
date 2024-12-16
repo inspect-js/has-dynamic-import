@@ -1,6 +1,6 @@
 'use strict';
 
-var callBound = require('call-bind/callBound');
+var callBound = require('call-bound');
 var $then = callBound('Promise.prototype.then', true);
 
 var pFalse = $then && Promise.resolve(false);
@@ -31,6 +31,7 @@ module.exports = function hasDynamicImport() {
 
 		return $then(promise, thunkTrue, thunkFalse);
 	} catch (e) {
-		return pFalse;
+		// eslint-disable-next-line no-extra-parens
+		return /** @type {NonNullable<typeof pFalse>} */ (pFalse);
 	}
 };
