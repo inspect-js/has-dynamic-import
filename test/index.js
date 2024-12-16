@@ -33,9 +33,10 @@ test('hasFullSupport', function (t) {
 
 	t.test('experimental warning', { skip: !spawnSync || !!process.env.RECURSION }, function (st) {
 		st.plan(1);
+		var NODE_OPTIONS = semver.satisfies(process.version, '>=22') ? '--disable-warning=DEP0060' : '';
 		// @ts-expect-error ts(2349) TS can't narrow based on tape's `skip`
 		var res = spawnSync('node', ['test'], {
-			env: { PATH: process.env.PATH, RECURSION: 'recursion' }
+			env: { PATH: process.env.PATH, NODE_OPTIONS: NODE_OPTIONS, RECURSION: 'recursion' }
 		});
 		if (semver.satisfies(process.version, '^12.17 <12.20 || ^13.4 < 13.14')) {
 			st.ok(String(res.stderr), 'stderr has an experimental warning in it');
