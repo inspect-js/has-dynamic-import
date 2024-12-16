@@ -1,6 +1,6 @@
 {
 	"name": "has-dynamic-import",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"description": "Does the current environment have `import()` support?",
 	"main": "index.js",
 	"browser": {

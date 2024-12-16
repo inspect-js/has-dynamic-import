@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.1.1](https://github.com/inspect-js/has-dynamic-import/compare/v2.1.0...v2.1.1) - 2024-12-15
+
+### Commits
+
+- [types] use shared config [`72a0c9f`](https://github.com/inspect-js/has-dynamic-import/commit/72a0c9fb0d00118e89d8bd6987110ffc2678c490)
+- [actions] split out node 10-20, and 20+ [`080e3da`](https://github.com/inspect-js/has-dynamic-import/commit/080e3da701479b5c697ae7c0d29cf692e1f97a3d)
+- [Dev Deps] update `@ljharb/eslint-config`, `@ljharb/tsconfig`, `@types/node`, `@types/tape`, `auto-changelog`, `tape` [`f110c4a`](https://github.com/inspect-js/has-dynamic-import/commit/f110c4a82f81d83f539418d7a91245f291a76bef)
+- [Refactor] use `call-bound` directly [`bb5bbfe`](https://github.com/inspect-js/has-dynamic-import/commit/bb5bbfea197256392dad9d5be2a4bd8e928d547f)
+- [Dev Deps] update `@types/node`, `@types/semver`, `tape`, `typescript` [`e9e8116`](https://github.com/inspect-js/has-dynamic-import/commit/e9e8116060fcc66420b1cf3168701f262d281961)
+- [Deps] update `call-bind`, `get-intrinsic` [`fc96301`](https://github.com/inspect-js/has-dynamic-import/commit/fc963015bd1a247cd9b1d84e2375c7b0e294b2a7)
+- [Deps] update `call-bind`, `get-intrinsic` [`2a24231`](https://github.com/inspect-js/has-dynamic-import/commit/2a24231bf0bdb3d30c67773706fe752c534430cb)
+- [Tests] fix a spurious failure caused by a deprecation warning [`3458310`](https://github.com/inspect-js/has-dynamic-import/commit/3458310567322f1c8c00702e65be0589cfbb1c31)
+- [Tests] replace `aud` with `npm audit` [`d6b1f10`](https://github.com/inspect-js/has-dynamic-import/commit/d6b1f102d3561d1473254bd05397cdfe9eae3fcf)
+- [Dev Deps] add missing peer dep [`c8dbae1`](https://github.com/inspect-js/has-dynamic-import/commit/c8dbae19133531cc287f991c919bdb1af9255ee4)
+
 ## [v2.1.0](https://github.com/inspect-js/has-dynamic-import/compare/v2.0.1...v2.1.0) - 2024-01-12
 
 ### Commits
