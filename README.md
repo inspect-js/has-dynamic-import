@@ -34,5 +34,5 @@ Simply clone the repo, `npm install`, and run `npm test`
 [downloads-url]: https://npm-stat.com/charts.html?package=has-dynamic-import
 [codecov-image]: https://codecov.io/gh/inspect-js/has-dynamic-import/branch/main/graphs/badge.svg
 [codecov-url]: https://app.codecov.io/gh/inspect-js/has-dynamic-import/
-[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/inspect-js/has-dynamic-import
+[actions-image]: https://img.shields.io/github/check-runs/inspect-js/has-dynamic-import/main
 [actions-url]: https://github.com/inspect-js/has-dynamic-import/actions
